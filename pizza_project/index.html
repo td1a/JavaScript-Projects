@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="./js/pizza.js"></script>
+        <link rel="stylesheet" href="./css/pizza.css">
+
+    </head>
+
+    <body>
+        <div id="menubg">
+            <h1>Pizza Order Demo</h1>
+            
+            <form id="frmMenu">
+                <div class="menu-left">
+                    <h3>Size:</h3>
+                    <input class="size" type="radio" name="Size" value="Personal Pizza">Personal Pizza<br>
+                    <input class="size" type="radio" name="Size" value="Small Pizza">Small Pizza<br>               
+                    <input class="size" type="radio" name="Size" value="Medium Pizza">Medium Pizza<br>
+                    <input class="size" type="radio" name="Size" value="Large Pizza" checked>Large Pizza<br>
+                    <input class="size" type="radio" name="Size" value="Extra Large Pizza">Extra Large Pizza<br>
+                </div>
+                <div class="menu-right">
+                    <h3>Meats:</h3>
+                    <input class="toppings" type="checkbox" name="Topping" value="Pepperoni">Pepperoni<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Sausage">Sausage<br>         
+                    <input class="toppings" type="checkbox" name="Topping" value="Ground Beef">Ground Beef<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Anchovis">Anchovis<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Chicken">Chicken<br>         
+                    <input class="toppings" type="checkbox" name="Topping" value="Salami">Salami<br>              
+                </div>
+                <h4>First topping for free and 1 dollar per extra topping</h4>
+                <input id="btnOrder" type="button" onclick="getReceipt()" value="Submit order">
+                <div id="cart">
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+
+        </div>
+
+    </body>
+</html>
